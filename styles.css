@@ -36,6 +36,7 @@ ul li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
+    display: block;
 }
 
 ul li a:hover {
@@ -43,7 +44,6 @@ ul li a:hover {
     background: #fff;
     padding: 0.5rem;
 }
-
 div.hero-section {
     background: #304353;
     padding: 10rem;
@@ -121,8 +121,8 @@ div.background p {
 
 div.hero-background-pos {
     position: absolute;
-    right: 0px;
     left: 66%;
+    right: 0px;
     background: #fff;
     width: 140px;
     height: 140px;
@@ -345,3 +345,60 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+
+@media only screen and (max-width:600px){
+div.background{
+height: 340px;
+}
+div.hero-background-pos{
+    display: none;
+}
+div.snapshot-box-content{
+    display: grid;
+}
+}
+@media only screen and (max-width:360px){
+    body{
+       width: 360px; 
+    }
+ }
+ @media only screen and (min-width:600px){
+    div.background h4{
+        padding-top: 1px;
+    }
+    div.background p{
+        padding-left: 1rem;
+        width: 90%;
+    }
+    div.background{
+        height: 260px;
+    }
+    div.box1{
+        width: 180px;
+    }
+    div.box3{
+        width: 180px;
+    }
+    div.hero-background-pos{
+        margin-left: 2.5%;
+        width: 130px;
+        height: 136px;
+    }
+    div.background{
+        height: 288.4px;
+    }
+ }
+ @media only screen and (min-width:768px){
+     div.box1{
+         width: 220px;
+     }
+     div.box3{
+         width: 220px;
+     }
+ }
+ 
+
+ 
+
+ 
